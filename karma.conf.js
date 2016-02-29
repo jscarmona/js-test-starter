@@ -6,12 +6,11 @@ module.exports = function(config) {
     frameworks: ['browserify', 'mocha', 'sinon-chai'],
     files: [
       './node_modules/phantomjs-polyfill/bind-polyfill.js',
-      'test/**/*.spec.js'
+      'src/**/*.spec.js'
     ],
     exclude: [],
     preprocessors: {
-      'src/**/*.js': ['browserify'],
-      'test/**/*.spec.js': ['browserify']
+      'src/**/*.js': ['browserify']
     },
     browserify: {
       debug: true,
